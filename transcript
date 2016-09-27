@@ -9,21 +9,373 @@
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
 # Loading project Q6
-# Compile of dff.v was successful.
-# Compile of prob6_structual.v was successful.
-# Compile of prob6_behavoiral.v was successful.
-# Compile of testBench_S.v was successful.
-# Compile of testBench_B.v was successful.
-# 5 compiles, 0 failed with no errors. 
-# Compile of dff.v was successful.
-# Compile of prob6_structual.v was successful.
-# Compile of prob6_behavoiral.v was successful.
-# Compile of testBench_S.v was successful.
-# Compile of testBench_B.v was successful.
-# 5 compiles, 0 failed with no errors. 
-# Compile of dff.v was successful.
-# Compile of prob6_structual.v was successful.
-# Compile of prob6_behavoiral.v was successful.
-# Compile of testBench_S.v was successful.
-# Compile of testBench_B.v was successful.
-# 5 compiles, 0 failed with no errors. 
+# reading /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/../modelsim.ini
+# Loading project Q5
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.divider
+add wave sim/:testBench:*
+run
+run
+# Break in Module divider at divider.v line 17
+quit -sim
+# Compile of divider.v was successful.
+# Compile of testBench.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.divider
+add wave sim/:testBench:*
+run
+run
+run
+run
+run
+run
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q5/testBench.v(20)
+#    Time: 150 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 20
+# Compile of divider.v was successful with warnings.
+# Compile of testBench.v was successful with warnings.
+# 2 compiles, 0 failed with no errors. 
+quit -sim
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.divider
+add wave sim/:testBench:*
+run
+run
+run
+run
+run
+run
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q5/testBench.v(20)
+#    Time: 150 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 20
+restart
+run
+# Break in Module divider at divider.v line 15
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Compile of divider.v was successful with warnings.
+# Compile of testBench.v was successful with warnings.
+# 2 compiles, 0 failed with no errors. 
+quit -sim
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.divider
+add wave sim/:testBench:*
+run
+# Break in Module divider at divider.v line 20
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 25 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 50 ns.
+run
+# Break in Module divider at divider.v line 20
+run
+# Break in Module divider at divider.v line 20
+run
+# Break in Module divider at divider.v line 20
+run
+# Break in Module divider at divider.v line 20
+run
+run
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q5/testBench.v(20)
+#    Time: 150 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 20
+# Compile of divider.v was successful.
+# Compile of testBench.v was successful.
+# 2 compiles, 0 failed with no errors. 
+quit -sim
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.divider
+add wave sim/:testBench:*
+run
+# Break in Module divider at divider.v line 15
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 25 ns.
+step
+step
+step
+step
+add wave sim/:testBench:DUT:*
+add wave \
+{sim/:testBench:DUT:_R } \
+{sim/:testBench:DUT:_M } \
+{sim/:testBench:DUT:_Q } 
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run
+# Break in Module divider at divider.v line 15
+run
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+run
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q5/testBench.v(20)
+#    Time: 150 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 20
+restart
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 17
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+restart
+run
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 17
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 50 ns.
+run
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q5/testBench.v(20)
+#    Time: 150 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 20
+restart
+run
+# Break in Module divider at divider.v line 15
+step -over
+step -out
+# Break in Module divider at divider.v line 15
+step -out
+# Next activity is in 50 ns.
+step -out
+step -out
+# Break in Module divider at divider.v line 15
+step -out
+# Next activity is in 50 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run
+# Break in Module divider at divider.v line 15
+run
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q5/testBench.v(20)
+#    Time: 150 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 20
+restart
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+step
+step
+step
+step
+step
+restart
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+# Break in Module divider at divider.v line 15
+run
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q5/testBench.v(20)
+#    Time: 150 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 20
+# Compile of divider.v was successful.
+# Compile of testBench.v was successful.
+# 2 compiles, 0 failed with no errors. 
+quit -sim
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.divider
+add wave sim/:testBench:*
+run
+run
+run
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q5/testBench.v(20)
+#    Time: 150 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q5/testBench.v line 20
+# Compile of divider.v was successful.
+# Compile of testBench.v was successful.
+# 2 compiles, 0 failed with no errors. 

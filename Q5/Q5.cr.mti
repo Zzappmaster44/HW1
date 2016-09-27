@@ -1,0 +1,16 @@
+/home/acl76/EECS318/Hw1/Q5/divider.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q5/divider.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module divider
+
+Top level modules:
+	divider
+
+} {} {}} /home/acl76/EECS318/Hw1/Q5/testBench.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q5/testBench.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module divider
+-- Compiling module testBench
+
+Top level modules:
+	testBench
+
+} {} {}}
