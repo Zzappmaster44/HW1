@@ -1,0 +1,680 @@
+# //  QuestaSim-64 6.5f Jun 16 2010 Linux 3.13.0-93-generic
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project Q1
+# reading /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/../modelsim.ini
+cd /home/acl76/EECS318/Hw1/Q3
+# Loading project Q3
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v failed with 1 errors.
+qvlcom CSA_10_Nums.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# -- Compiling module CSA_10_Nums
+# ** Error: CSA_10_Nums.v(18): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(19): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(20): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(21): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(22): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(23): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(24): 'adder' already declared in this scope.
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+# Compile of CSA_10_Nums.v failed with 1 errors.
+qvlcom CSA_10_Nums.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# -- Compiling module CSA_10_Nums
+# ** Error: CSA_10_Nums.v(18): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(19): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(20): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(21): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(22): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(23): 'adder' already declared in this scope.
+# ** Error: CSA_10_Nums.v(24): 'adder' already declared in this scope.
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+qvlcom CSA_10_Nums.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# -- Compiling module CSA_10_Nums
+# 
+# Top level modules:
+# 	CSA_10_Nums
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# 3 compiles, 0 failed with no errors. 
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# ** Error: (vsim-3170) Could not find '/home/acl76/EECS318/Hw1/Q3/work.testBench'.
+# Error loading design
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 1 failed with 1 error. 
+qvlcom testBench.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# -- Compiling module CSA_10_Nums
+# -- Compiling module testBench
+# ** Error: testBench.v(48): near "EOF": syntax error, unexpected "end of source code"
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+qvlcom testBench.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# -- Compiling module CSA_10_Nums
+# -- Compiling module testBench
+# 
+# Top level modules:
+# 	testBench
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-PLI-3003) testBench.v(13): [TOFD] - System task or function '$moitor' is not defined.
+#         Region: :testBench
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v failed with 1 errors.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 2 failed with 2 errors. 
+qvlcom testBench.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# -- Compiling module CSA_10_Nums
+# ** Error: CSA_10_Nums.v(19): Undefined variable: Z.
+# ** Error: CSA_10_Nums.v(19): near "[": syntax error, unexpected '[', expecting ')'
+# ** Error: CSA_10_Nums.v(20): near "[": syntax error, unexpected '[', expecting ')'
+# ** Error: CSA_10_Nums.v(21): near "[": syntax error, unexpected '[', expecting ')'
+# ** Error: CSA_10_Nums.v(22): near "[": syntax error, unexpected '[', expecting ')'
+# ** Error: CSA_10_Nums.v(23): near "[": syntax error, unexpected '[', expecting ')'
+# ** Error: CSA_10_Nums.v(24): near "[": syntax error, unexpected '[', expecting ')'
+# ** Error: CSA_10_Nums.v(25): near "[": syntax error, unexpected '[', expecting ')'
+# ** Error: CSA_10_Nums.v(26): near "[": syntax error, unexpected '[', expecting ')'
+# -- Compiling module testBench
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+run
+run
+run
+run
+run
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    x Carry=x
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum=    x Carry=x
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum=    x Carry=x
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q3/testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q3/testBench.v line 47
+add wave sim/:testBench:*
+run
+run
+run
+run
+run
+restart
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    x Carry=x
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum=    x Carry=x
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum=    x Carry=x
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q3/testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q3/testBench.v line 47
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    x Carry=x
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v failed with 1 errors.
+# Compile of CSA_10_Nums.v failed with 1 errors.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 3 failed with 3 errors. 
+qvhcom CSA_bit.v
+# QuestaSim-64 vcom 6.5f Compiler 2010.06 Jun 16 2010
+# -- Loading package standard
+# ** Error: CSA_bit.v(1): near "timescal": 
+# ** Warning: [4] CSA_bit.v(1): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: CSA_bit.v(1): VHDL Compiler exiting
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vcom failed.
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v failed with 1 errors.
+# Compile of CSA_10_Nums.v failed with 1 errors.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 3 failed with 3 errors. 
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v failed with 1 errors.
+# Compile of CSA_10_Nums.v failed with 1 errors.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 3 failed with 3 errors. 
+qvhcom CSA_bit.v
+# QuestaSim-64 vcom 6.5f Compiler 2010.06 Jun 16 2010
+# -- Loading package standard
+# ** Error: CSA_bit.v(1): near "timescal": 
+# ** Warning: [4] CSA_bit.v(1): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: CSA_bit.v(1): VHDL Compiler exiting
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vcom failed.
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'S'.
+#         Region: :testBench:DUT:adder1:adder[0]
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'C'.
+#         Region: :testBench:DUT:adder1:adder[0]
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'S'.
+#         Region: :testBench:DUT:adder2:adder[0]
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'C'.
+#         Region: :testBench:DUT:adder2:adder[0]
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'S'.
+#         Region: :testBench:DUT:adder3:adder[0]
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'C'.
+#         Region: :testBench:DUT:adder3:adder[0]
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'S'.
+#         Region: :testBench:DUT:adder4:adder[0]
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'C'.
+#         Region: :testBench:DUT:adder4:adder[0]
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'S'.
+#         Region: :testBench:DUT:adder5:adder[0]
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'C'.
+#         Region: :testBench:DUT:adder5:adder[0]
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'S'.
+#         Region: :testBench:DUT:adder6:adder[0]
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'C'.
+#         Region: :testBench:DUT:adder6:adder[0]
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'S'.
+#         Region: :testBench:DUT:adder7:adder[0]
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'C'.
+#         Region: :testBench:DUT:adder7:adder[0]
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'S'.
+#         Region: :testBench:DUT:adder8:adder[0]
+# ** Error: (vsim-3053) CSA_bit.v(9): Illegal output or inout port connection for port 'C'.
+#         Region: :testBench:DUT:adder8:adder[0]
+# Error loading design
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+# Break key hit 
+# Break in Module CSA_bit in file CSA_bit.v
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    x Carry=x
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum=    x Carry=x
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum=    x Carry=x
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q3/testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q3/testBench.v line 47
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    x Carry=x
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum=    x Carry=x
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum=    x Carry=x
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q3/testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q3/testBench.v line 47
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+qvhcom testBench.v
+# QuestaSim-64 vcom 6.5f Compiler 2010.06 Jun 16 2010
+# -- Loading package standard
+# ** Error: testBench.v(1): near "timescal": 
+# ** Warning: [4] testBench.v(1): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: testBench.v(1): VHDL Compiler exiting
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vcom failed.
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+qvhcom testBench.v
+# QuestaSim-64 vcom 6.5f Compiler 2010.06 Jun 16 2010
+# -- Loading package standard
+# ** Error: testBench.v(1): near "timescal": 
+# ** Warning: [4] testBench.v(1): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: testBench.v(1): VHDL Compiler exiting
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vcom failed.
+qvlcom testBench.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# -- Compiling module CSA_10_Nums
+# -- Compiling module testBench
+# 
+# Top level modules:
+# 	testBench
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(20): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(21): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    x Carry=x
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum=    x Carry=x
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum=    x Carry=x
+# ** Note: $finish    : testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at testBench.v line 47
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v failed with 1 errors.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 2 failed with 2 errors. 
+qvlcom CSA_10_Nums.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# -- Compiling module CSA_10_Nums
+# ** Error: CSA_10_Nums.v(29): LHS in procedural continuous assignment may not be a net: SUM.
+# ** Error: CSA_10_Nums.v(29): LHS in procedural continuous assignment may not be a net: CARRY.
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(27): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(28): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    x Carry=x
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum=    x Carry=x
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum=    x Carry=x
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q3/testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q3/testBench.v line 47
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v failed with 1 errors.
+# Compile of CSA_10_Nums.v failed with 1 errors.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 3 failed with 3 errors. 
+qvlcom CSA_bit.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# ** Error: CSA_bit.v(20): Slices of unpacked array not allowed in procedural continuous assignment: fS.
+# ** Error: CSA_bit.v(21): Slices of unpacked array not allowed in procedural continuous assignment: fC.
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+qvlcom CSA_bit.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# ** Error: CSA_bit.v(21): Illegal concatenation of an unsized constant.
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+qvlcom CSA_bit.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module add_3
+# -- Compiling module CSA_bit
+# 
+# Top level modules:
+# 	CSA_bit
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(22): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder2
+# ** Warning: (vsim-3015) CSA_10_Nums.v(23): [PCDPC] - Port size (10 or 10) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder3
+# ** Warning: (vsim-3015) CSA_10_Nums.v(24): [PCDPC] - Port size (11 or 11) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder4
+# ** Warning: (vsim-3015) CSA_10_Nums.v(25): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder5
+# ** Warning: (vsim-3015) CSA_10_Nums.v(26): [PCDPC] - Port size (13 or 13) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder6
+# ** Warning: (vsim-3015) CSA_10_Nums.v(27): [PCDPC] - Port size (14 or 14) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder7
+# ** Warning: (vsim-3015) CSA_10_Nums.v(28): [PCDPC] - Port size (15 or 15) does not match connection size (8) for port 'Z'. The port definition is at: CSA_bit.v(3).
+#         Region: :testBench:DUT:adder8
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    x Carry=x
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    0 Carry=0
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum= 5459 Carry=0
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum= 5424 Carry=0
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q3/testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q3/testBench.v line 47
+restart
+add wave sim/:testBench:*
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    0 Carry=0
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum= 5459 Carry=0
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum= 5424 Carry=0
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q3/testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q3/testBench.v line 47
+add wave sim/:testBench:DUT:adder1:*
+restart
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    0 Carry=0
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum= 5459 Carry=0
+quit -sim
+# Compile of add_3.v was successful.
+# Compile of CSA_bit.v was successful.
+# Compile of CSA_10_Nums.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.CSA_10_Nums
+# Loading work.CSA_bit
+# Loading work.add_3
+add wave sim/:testBench:*
+run
+#                    0 A=  0 B=  0 C=  0 D=  0 E=  0 F=  0 G=  0 H=  0 I=  0 J=  0 Sum=    0 Carry=0
+run
+#                  100 A= 11 B=  2 C= 13 D=  4 E=  5 F=  6 G=  7 H=  8 I=  9 J= 10 Sum=   75 Carry=0
+run
+#                  200 A=  3 B= 14 C=  5 D=  6 E=  7 F=  8 G= 19 H= 10 I=  0 J=  0 Sum=   72 Carry=0
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q3/testBench.v(47)
+#    Time: 300 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q3/testBench.v line 47
+quit -sim
+# reading /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/../modelsim.ini
+# file mkdir Q4 

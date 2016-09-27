@@ -1,0 +1,25 @@
+`timescale 1ns/1ns
+module dff  (Q, _Q, D, clk);
+  output reg Q, _Q;
+  input   D, clk;
+  
+  //wire w1,w2;
+  initial
+    begin
+      Q   <=  1'b0;
+      _Q  <=  1'b1;
+    end
+  
+  always @(posedge clk)
+    begin
+      Q   <=   D;
+      _Q  <=  ~D;
+    end
+  
+  /*
+  nand  g1  (w1,D,clk);
+  nand  g2  (w2,w1,clk);
+  nand  g3  (Q,_Q,w1);
+  nand  g4  (_Q,Q,w2);
+  */
+endmodule

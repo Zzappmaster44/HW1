@@ -1,0 +1,68 @@
+#
+#
+# /mgc/Leonardo/bin/Linux/spectrum 
+# Wed Sep 21 17:36:57 2016
+# read /u/saab/LocLeo/lib/ami05_typ.syn
+
+read /mgc/Leonardo/lib/tsmc035_typ.syn
+
+
+
+read {/home/acl76/EECS318/Hw1/Q2/CLA_4bit.v}
+
+### Previous Command Failed
+
+
+
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize
+
+### Previous Command Failed
+
+pre_optimize -extract
+
+### Previous Command Failed
+
+optimize -macro -auto -effort quick -hierarchy auto
+
+### Previous Command Failed
+
+
+
+optimize .work.FSM.INTERFACE -macro -auto -effort quick -hierarchy auto
+
+### Previous Command Failed
+
+optimize_timing .work.FSM.INTERFACE
+
+### Previous Command Failed
+
+set edif_write_arrays FALSE
+
+
+
+write -downto PRIMITIVES -format vhdl   Proc.vhd
+
+### Previous Command Failed
+
+write -downto PRIMITIVES -format edif   Proc.edf
+
+### Previous Command Failed
+
+# write -downto PRIMITIVES -format verilog  Proc.v
+
+write -format verilog  Proc.v
+
+### Previous Command Failed
+
+write -format SDF -downto PRIMITIVES Proc.sdf
+
+### Previous Command Failed
+
+set report_file_name CriticalPath
+
+report_delay -num_paths 1 -show_schematic 1 -critical_paths 
+
+### Previous Command Failed
+
+exit
+

@@ -1,0 +1,290 @@
+# //  QuestaSim-64 6.5f Jun 16 2010 Linux 3.13.0-93-generic
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project Q2
+vopt work.CLA_4bit -o TEST -nocovercells
+# QuestaSim-64 vopt 6.5f Compiler 2010.06 Jun 16 2010
+# 
+# Top level modules:
+# 	CLA_4bit
+# 
+# Analyzing design...
+# -- Loading module CLA_4bit
+# Optimizing 1 design-unit (inlining 0 instances):
+# -- Optimizing module CLA_4bit(fast)
+# Optimized design name is TEST
+vsim work.TEST
+# vsim work.TEST 
+# Loading work.CLA_4bit(fast)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Start C Debug 
+cdbg debug_on
+# Please wait, starting the C debugger... 
+# Program received signal SIGINT, Interrupt. 
+# 0x00007faed63cdc33 in select () from /lib/x86_64-linux-gnu/libc.so.6 
+# Attached to vsim PID 19310 
+# The C debugger has started 
+# Quit C Debug 
+cdbg quit
+add wave *
+# Compile of CLA_4bit.v was successful.
+# Compile of testBench.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testBench.v failed with 1 errors.
+# Compile of CLA_4bit.v was successful.
+# Compile of testBench.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+qvl
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# Usage: vlog [options] files
+# Options:
+#   -help              Print this message
+#   -time              Print the compilation wall clock time
+#   -version           Print the version of the compiler
+#   -work <path>       Specify library WORK
+#   -error <msgNumber>[,<msgNumber>...]
+#                      Report the listed messages as errors
+#   -warning <msgNumber>[,<msgNumber>...]
+#                      Report the listed messages as warnings
+#   -note <msgNumber>[,<msgNumber>...]
+#                      Report the listed message as notes
+#   -suppress <msgNumber>[,<msgNumber>...]
+#                      Suppress the listed messages
+#   -93                Use VHDL 1076-1993 extended identifiers to preserve the
+#                      case of names in the entity interface
+#   -0in               Enable support for the 0in tools
+#   -0in_options opts  Pass options in quotes to the 0in tools
+#   +acc[=<spec>][+<selection>[.]]
+#                      Enable PLI and debug command access to specified objects
+#                      when optimizing a design.   Objects are specified by a
+#                      combination of hierarchical location and object-kind.
+#                      The +<selection> and <spec> modifiers compose together to
+#                      specify a set of objects in a given area of the design.
+#                      These modifiers help maximize simulation performance while
+#                      retaining access to required objects.
+# 
+#                      By default, +acc has effect on all compiled design units.
+#                      +<selection> can be used to modify the scope of +acc's effect.
+#                      It enables access for a specific design unit or object.
+#                      Add a trailing . to recursively select objects under a
+#                      specified design unit or instance.
+# 
+#                      By default, +acc has effect on all kinds of design objects.
+#                      <spec> is used to more precisely target certain kinds of objects.
+#                      <spec> consists of one or more of the letter codes below.
+#                      When <spec> is absent, all +acc letter codes are in effect.
+#                         a (SVA/PSL objects, requirement for vsim -assertdebug)
+#                         b (net bits)
+#                         c (cell internal objects)
+#                         f (fsm recognition and debugging)
+#                         l (line debugging)
+#                         m (module, program, and interface instances)
+#                         n (nets)
+#                         p (ports)
+#                         q (variables and generics)
+#                         r (variables and parameters)
+#                         s (enable override of built-in system tasks)
+#                         t (task and function scopes)
+#                         u (primitive instances)
+#   +floatparameters[+<selection>[.]]
+#                      Don't lock down parameter values during compilation.
+#                      This enables successful use of the vsim -g/G options.
+#                      The effect of the option is localized to parameters in
+#                      design units being compiled in the current vlog session.
+#                      If a trailing . is present, then the option will be
+#                      applied to parameters in all descendant instances, too.
+#   -compat            Enable maximum compatibility at expense of performance
+#   -compile_uselibs[=<directory_name>]
+#                      Use the `uselib directive to find verilog source files
+#                      and compile them into automatically created libraries
+#   -cuname <compilation_unit_name>
+#                      Explicitly name the compilation unit package. The option
+#                      can only be used with -mfcu. The <compilation_unit_name>
+#                      can be top design unit name at vsim and vopt commandline
+#   +cover[=sbceftx]   Enable code coverage metrics by specifying one or
+#                      more of the characters:
+#                      s statement
+#                      b branch
+#                      c condition
+#                      e expression
+#                      f fsm
+#                      t toggle
+#                      x extended toggle
+#                      If no character is specified, sbceft is the default.
+#   -coveropt <i>      Specify a digit for code coverage optimization level: 1 through 4.
+#   -coverexcludedefault Automatically exclude case default clauses.
+#   -nocoverfec        Disable Focused Expression Coverage analysis for conditions and expressions.
+#   -nocovershort      Disable short circuiting of expressions/condition when coverage is enabled.
+#   -nocoverexcludedefault Don't automatically exclude case default clauses.
+#   -covercells        Enable code coverage options in cells
+#   -nocovercells      Disable code coverage options in cells
+#   -constimmedassert  Show constant immediate assertions in GUI/UCDB/reports etc.
+#   -togglecountlimit n Quit collecting toggle info after count n is reached.
+#   -togglewidthlimit n Don't collect toggle data on reg's or arrays wider than n.
+#   -maxudprows n      Max number of rows allowed in UDP tables for code coverage.
+#   -maxfecrows n      Max number of input patterns allowed in FEC table for code coverage.
+#   +define+<macro_name>[=<macro_text>]
+#                      Same as compiler directive: `define macro_name macro_text
+#   +delay_mode_distributed
+#                      Use structural delays and ignore path delays
+#   +delay_mode_path   Set structural delays to zero and use path delays
+#   +delay_mode_unit   Set non-zero structural delays to one
+#   +delay_mode_zero   Set structural delays to zero
+#   -dpiforceheader    Force generation of dpi header file even when
+#                      empty of function prototypes
+#   -dpiheader <filename>
+#                      Save the generated declarations of SystemVerilog DPI
+#                      tasks and functions into <filename>
+#   -E <filename>      Write preprocessed Verilog and SystemVerilog into <filename>
+#   -Epretty <filename>
+#                      Write pretty preprocessed Verilog and SystemVerilog into <filename>
+#   -Edebug <filename>
+#                      Write debugable preprocessed Verilog and SystemVerilog into <filename>
+#   -f <path>          Specify a file containing more command line arguments
+#   -nofsmresettrans   Disable recognition of implicit asynchronous reset transitions for FSMs
+#   -fsmresettrans     Enable recognition of implicit asynchronous reset transitions for FSMs
+#   -nofsmsingle       Disable recognition FSMs having single bit current state variable
+#   -fsmsingle         Enable recognition FSMs having single bit current state variable
+#   -fsmimplicittrans  Enable recognition of implicit transitions in FSMs
+#   -fsmmultitrans     Enable recognition of Multi-state transitions in FSMs
+#   -nofsmxassign      Disable recognition of FSMs containing x assignment
+#   -fsmxassign        Enable recognition of FSMs containing x assignment
+#   -gen_xml <entity> <output>
+#                      Output (into a file) the interface definition of the
+#                      specified design unit in XML format
+#   -hazards           Enable run-time hazard checking code
+#   +incdir+<dir>      Search directory for files included with
+#                      `include "filename"
+#   -incr              Enable incremental compilation
+#   +initmem[=<spec>][+0|1|X|Z]
+#                      Initialize fixed-size arrays of type indicated by <spec>.
+#   +initreg[=<spec>][+0|1|X|Z]
+#                      Initialize variables of type indicated by <spec>.
+#                      Valid types of <spec> are:
+#                         r (4-state integral types)
+#                         b (2-state integral types)
+#                         e (enum types)
+#                         u (udp types)
+#                      If <spec> is not specified, all these types are enabled.
+#                      If 0|1|X|Z is specified, all the bits in the variable
+#                      are intialized to that value.  Otherwise, these variables
+#                      are prepared for randomization during vsim.
+#   -L <libname>       Search library for design units needed when optimizing
+#   -Lf <libname>      Same as -L, but libraries are searched before `uselib
+#   +libext+<suffix>   Specify suffix of files in library directory
+#   -libmap <path>     Specify Verilog 2001 library map file
+#   -libmap_verbose    Display library map pattern matching information during compilation
+#   +librescan         Scan libraries in command line order for all
+#                      unresolved module references
+#   -line <lineNum>    Specify a starting line number
+#   -lint              Perform lint-style checks
+#   -lowercasepragma   Allow only lower case pragmas
+#   -lowercasepslpragma   Allow only lower case PSL pragmas
+#   -modelsimini <modelsim.ini>
+#                      Specify path to the modelsim.ini file.
+#   +maxdelays         Use maximum timing from min:typ:max expressions
+#   -mfcu              Multi-file compilation unit, all files in command line make up a compilation unit.
+#                      The default is to have each file be a separate compilation unit
+#   +mindelays         Use minimum timing from min:typ:max expressions
+#   -mixedansiports    Enables mixing of ANSI-style and non-ANSI-style declarations
+#   -nocheck           Disable run-time range and index checks
+#   -nodebug[=ports][=pli][=ports+pli]
+#                      Do not put symbolic debugging information into the library
+#   -nodbgsym
+#                      Do not generate symbols debugging database
+#   -noincr            Disable incremental compile previously turned on with -incr
+#   +nolibcell         Do not automatically define library modules as cells(default)
+#   +libcell           Define library modules (found with -v|-y search) as cells
+#   -nologo            Disable startup banner
+#   -nopsl             Disable embedded PSL language parsing
+#   -novopt            Do not run the "vopt" compiler before simulation
+#   +nospecify         Disable specify path delays and timing checks
+#   +notimingchecks    Disable timing checks
+#   -nowarn <number>   Disable specified category of warning messages; verror 1907 to see them
+#   +nowarn<CODE>      Disable specified warning message
+#   -noconstimmedassert  Do not show constant immediate assertions in GUI/UCDB/reports etc.
+#   -O0                Disable optimizations
+#   -O1                Enable some optimizations
+#   -O4                Enable most optimizations (default)
+#   -O5                Enable additional compiler optimizations
+#   -pedanticerrors    Enforce strict language checks
+#   +protect[=<file>]  Enable use of `protect...`endprotect compiler directives
+#   -pslext            Enable PSL LTL/Universal operators
+#   -pslfile <file>    Compile and bind PSL vunits specified by <file>
+#   -quiet             Disable 'Loading' messages
+#   -R [<simargs>]     Cause vsim to be invoked with <simargs> and top-level
+#                      modules; simargs consists of the rest of the arguments
+#                      or until a single-character dash is encountered
+#   -                  Indicate end of optional -R <simargs>
+#   -refresh           Refresh the library image from .dat file(s)
+#   -scdpiheader <filename>
+#                      Save the generated declarations of SystemVerilog SystemC DPI
+#                      tasks and functions into <filename>
+#   -sfcu              Single-file compilation unit (default),
+#                      each file in command line is a separate compilation unit
+#   -source            Print the source line with error messages
+#   -sv                Enable SystemVerilog features and keywords
+#   -timescale <timescale>
+#                      Specify the default timescale for modules not having an
+#                      explicit timescale. The format of <timescale> is the same
+#                      as that of the `timescale directive.
+#                      For example, -timescale "1 ns / 1 ps".
+#   +typdelays         Use typical timing from min:typ:max expressions
+#   -u                 Convert regular Verilog identifiers to uppercase
+#   -v <path>          Specify Verilog source library file
+#   -vlog95compat      Ensure compatibility with Std 1364-1995
+#   -vlog01compat      Ensure compatibility with Std 1364-2001
+#   -convertallparams  Enables converting parameters not defined in ANSI style
+#                      to VHDL generics of type std_logic_vector, bit_vector,
+#                      std_logic and bit.
+#   -mixedsvvh [b | s | v] [packedstruct]
+#                      Facilitates using a SV packages at the SV-VHDL mixed-language boundary.
+#                         b - treat scalars/vectors in package as bit/bit_vector
+#                         s - treat scalars/vectors in package as std_logic/std_logic_vector
+#                         v - treat scalars/vectors in package as vl_logic/vl_logic_vector
+#                         packedstruct - treat packed structures as VHDL arrays of equivalent size
+#   -vopt              Run the "vopt" compiler before simulation
+#   -y <path>          Specify Verilog source library directory
+#   -vmake             Collects complete list of command line args and files processed for use by vmake.
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+qvlcom testBench.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module CLA_4bit
+# -- Compiling module testBench
+# ** Error: testBench.v(13): near "begin": syntax error, unexpected "begin"
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+# Compile of CLA_4bit.v was successful.
+# Compile of testBench.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+qvlcom testBench.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module CLA_4bit
+# -- Compiling module testBench
+# ** Error: testBench.v(13): near "begin": syntax error, unexpected "begin"
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+qvlcom testBench.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module CLA_4bit
+# -- Compiling module testBench
+# ** Error: testBench.v(13): near "begin": syntax error, unexpected "begin"
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.

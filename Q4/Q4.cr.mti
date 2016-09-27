@@ -1,0 +1,34 @@
+/home/acl76/EECS318/Hw1/Q4/Multi_5.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q4/Multi_5.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module full_add
+-- Compiling module half_add
+-- Compiling module Multi_5
+
+Top level modules:
+	Multi_5
+
+} {} {}} /home/acl76/EECS318/Hw1/Q4/full_add.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q4/full_add.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module full_add
+
+Top level modules:
+	full_add
+
+} {} {}} /home/acl76/EECS318/Hw1/Q4/half_add.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q4/half_add.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module half_add
+
+Top level modules:
+	half_add
+
+} {} {}} /home/acl76/EECS318/Hw1/Q4/testBench.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q4/testBench.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module full_add
+-- Compiling module half_add
+-- Compiling module Multi_5
+-- Compiling module testBench
+
+Top level modules:
+	testBench
+
+} {} {}}

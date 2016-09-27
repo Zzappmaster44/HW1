@@ -1,0 +1,25 @@
+/home/acl76/EECS318/Hw1/Q1/adder8.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q1/adder8.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module adder
+-- Compiling module adder8
+
+Top level modules:
+	adder8
+
+} {} {}} /home/acl76/EECS318/Hw1/Q1/adder.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q1/adder.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} /home/acl76/EECS318/Hw1/Q1/testBench.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q1/testBench.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module adder
+-- Compiling module adder8
+-- Compiling module testBench
+
+Top level modules:
+	testBench
+
+} {} {}}

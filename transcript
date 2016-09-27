@@ -1,0 +1,144 @@
+# //  QuestaSim-64 6.5f Jun 16 2010 Linux 3.13.0-93-generic
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project Q4
+# Compile of Multi_5.v failed with 1 errors.
+# Compile of full_add.v was successful.
+# Compile of half_add.v was successful.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 2 failed with 2 errors. 
+qvlcom Multi_5.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module full_add
+# -- Compiling module half_add
+# -- Compiling module Multi_5
+# ** Error: Multi_5.v(76): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(77): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(78): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(79): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(81): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(81): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(82): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(82): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(82): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(82): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(83): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(83): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(83): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(83): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(84): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(84): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(84): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(84): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(86): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(86): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(87): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(87): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(87): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(87): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(88): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(88): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(88): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(88): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(90): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(90): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(91): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(91): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(91): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(91): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(93): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(93): Bit-select into 'w' is out of bounds.
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+# Compile of Multi_5.v was successful.
+# Compile of full_add.v was successful.
+# Compile of half_add.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+qvlcom Multi_5.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module full_add
+# -- Compiling module half_add
+# -- Compiling module Multi_5
+# 
+# Top level modules:
+# 	Multi_5
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.Multi_5
+# Loading work.half_add
+# Loading work.full_add
+run -all
+#                    0 A=  0 B=  0 P=    X
+#                  100 A=-10 B=  4 P=    X
+#                  200 A= 11 B= -3 P=    X
+#                  300 A=-11 B=-10 P=    X
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q4/testBench.v(25)
+#    Time: 400 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q4/testBench.v line 25
+# Compile of Multi_5.v was successful.
+# Compile of full_add.v was successful.
+# Compile of half_add.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+quit -sim
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.Multi_5
+# Loading work.half_add
+# Loading work.full_add
+run -all
+#                    0 A=  0 B=  0 P=    X
+#                  100 A=-10 B=  4 P=    X
+#                  200 A= 11 B= -3 P=    X
+#                  300 A=-11 B=-10 P=    X
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q4/testBench.v(25)
+#    Time: 400 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q4/testBench.v line 25
+quit -sim
+# Compile of Multi_5.v failed with 1 errors.
+# Compile of full_add.v was successful.
+# Compile of half_add.v was successful.
+# Compile of testBench.v failed with 1 errors.
+# 4 compiles, 2 failed with 2 errors. 
+qvlcom Multi_5.v
+# QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module full_add
+# -- Compiling module half_add
+# -- Compiling module Multi_5
+# ** Error: Multi_5.v(91): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(91): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(93): Bit-select into 'w' is out of bounds.
+# ** Error: Multi_5.v(93): Bit-select into 'w' is out of bounds.
+# /mgc/anacad2009_2c/questasim/v6.5f/linux_x86_64/vlog failed.
+# Compile of Multi_5.v was successful.
+# Compile of full_add.v was successful.
+# Compile of half_add.v was successful.
+# Compile of testBench.v was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim testBench
+# vsim testBench 
+# Loading work.testBench
+# Loading work.Multi_5
+# Loading work.half_add
+# Loading work.full_add
+run -all
+#                    0 A=  0 B=  0 P=    0
+#                  100 A=-10 B=  4 P=  -40
+#                  200 A= 11 B= -3 P=  -33
+#                  300 A=-11 B=-10 P=  110
+# ** Note: $finish    : /home/acl76/EECS318/Hw1/Q4/testBench.v(25)
+#    Time: 400 ns  Iteration: 0  Instance: :testBench
+# 1
+# Break in Module testBench at /home/acl76/EECS318/Hw1/Q4/testBench.v line 25
+quit -sim

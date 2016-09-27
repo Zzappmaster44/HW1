@@ -1,0 +1,16 @@
+/home/acl76/EECS318/Hw1/Q2/CLA_4bit.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q2/CLA_4bit.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module CLA_4bit
+
+Top level modules:
+	CLA_4bit
+
+} {} {}} /home/acl76/EECS318/Hw1/Q2/testBench.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q2/testBench.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module CLA_4bit
+-- Compiling module testBench
+
+Top level modules:
+	testBench
+
+} {} {}}

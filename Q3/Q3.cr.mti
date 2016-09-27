@@ -1,0 +1,35 @@
+/home/acl76/EECS318/Hw1/Q3/testBench.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q3/testBench.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module add_3
+-- Compiling module CSA_bit
+-- Compiling module CSA_10_Nums
+-- Compiling module testBench
+
+Top level modules:
+	testBench
+
+} {} {}} /home/acl76/EECS318/Hw1/Q3/CSA_10_Nums.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q3/CSA_10_Nums.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module add_3
+-- Compiling module CSA_bit
+-- Compiling module CSA_10_Nums
+
+Top level modules:
+	CSA_10_Nums
+
+} {} {}} /home/acl76/EECS318/Hw1/Q3/CSA_bit.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q3/CSA_bit.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module add_3
+-- Compiling module CSA_bit
+
+Top level modules:
+	CSA_bit
+
+} {} {}} /home/acl76/EECS318/Hw1/Q3/add_3.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q3/add_3.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module add_3
+
+Top level modules:
+	add_3
+
+} {} {}}

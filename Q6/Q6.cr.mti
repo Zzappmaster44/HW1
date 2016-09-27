@@ -1,0 +1,40 @@
+/home/acl76/EECS318/Hw1/Q6/testBench_B.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q6/testBench_B.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module prob6_behavoiral
+-- Compiling module testBench_B
+
+Top level modules:
+	testBench_B
+
+} {} {}} /home/acl76/EECS318/Hw1/Q6/prob6_behavoiral.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q6/prob6_behavoiral.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module prob6_behavoiral
+
+Top level modules:
+	prob6_behavoiral
+
+} {} {}} /home/acl76/EECS318/Hw1/Q6/testBench_S.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q6/testBench_S.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module dff
+-- Compiling module prob6_structual
+-- Compiling module testBench_S
+
+Top level modules:
+	testBench_S
+
+} {} {}} /home/acl76/EECS318/Hw1/Q6/prob6_structual.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q6/prob6_structual.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module dff
+-- Compiling module prob6_structual
+
+Top level modules:
+	prob6_structual
+
+} {} {}} /home/acl76/EECS318/Hw1/Q6/dff.v {1 {vlog -work work -novopt -nocovercells /home/acl76/EECS318/Hw1/Q6/dff.v
+QuestaSim-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+-- Compiling module dff
+
+Top level modules:
+	dff
+
+} {} {}}

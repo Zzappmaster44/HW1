@@ -1,0 +1,70 @@
+m255
+K3
+13
+cModel Technology
+d/home/acl76/EECS318/Hw1
+vfull_add
+!s100 bM;cM<?_13lF>Pm3lZY0M3
+I@n[egPJ2m5Zmn5DOfNeK92
+VeQbK0V_S:L7FzHea<dV0A3
+Z0 d/home/acl76/EECS318/Hw1/Q4
+Z1 w1474530700
+Ffull_add.v
+Z2 8/home/acl76/EECS318/Hw1/Q4/testBench.v
+Z3 F/home/acl76/EECS318/Hw1/Q4/testBench.v
+L0 2
+Z4 OL;L;6.5f;42
+r1
+!s85 0
+31
+Z5 !s102 -nocovercells
+Z6 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+vhalf_add
+!s100 5lcmXQH>2cePfjVL=YVOf0
+I5:FVN8QLcAnd@JJaVV87>2
+VT3N=:RY>F4EPXIhhmNPK81
+Z7 d/home/acl76/EECS318/Hw1/Q4
+R1
+Fhalf_add.v
+R2
+R3
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+vMulti_5
+!s100 c6aVaHe6h;jcIlnk<UJDQ1
+ILBGM4oTzVaJnm`oSlcT=?2
+V3hOe5`X2RhR^TzVhZKmhc2
+R7
+w1474554578
+FMulti_5.v
+R2
+R3
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+n@multi_5
+vtestBench
+!s100 LgJ8FeTZX9OfRB4H2[a0>1
+IQc45MFJUNaYZc63ge:b7[1
+V>9mR`RJXeY_boH6l7WC2@1
+R7
+R1
+R2
+R3
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+ntest@bench

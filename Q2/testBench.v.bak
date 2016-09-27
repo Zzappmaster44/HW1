@@ -1,0 +1,29 @@
+`timescale 1ns/1ns
+`include "CLA_4bit.v"
+module testBench;
+  
+  reg   [3:0] A, B;
+  reg         cIn;
+  wire  [3:0] SUM;
+  wire        cOut;
+  
+  CLA_4bit DUT (.SUM(SUM), .cOut(cOut), .A(A), .B(B), .cIn(cIn));
+  
+  initial 
+    begin
+      $moitor($time,,"A=%b B=%b cIn=%b Sum=%b cOut=%b", A, B, cIn, SUM, cOut);
+      A = 4'b0000;
+      B = 4'b0000;
+      cIn = 1'b0;
+      #100
+      // The critical path in a CLA adder occurs with the same conditions as the ripple carry adder. This is because when only 1 input is all 1's (and the other is all 0's) 
+      // then the propagate bus is also all 1's. When the carry in is also 1, this gives the conditions needed for the carry in of the last bit to relevant in changing the sum and
+      // it takes only 6 gate delays for the sum to reach a steady state. This is also independant of the bit width of the CLA adder as compared to the ripple carry adder becuase all
+      // propagate and generate signals are in parallel. 
+      A = 4'b1111
+      cIn = 1'b1;
+      #100
+      $finish;
+    end
+  
+endmodule

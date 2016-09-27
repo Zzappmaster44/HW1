@@ -1,0 +1,17 @@
+`timescale 1ns/1ns
+module full_add (sum, cOut, A, B, cIn);
+  
+  output  sum, cOut;
+  input   A, B, cIn;
+  
+  wire w1,w2,w3;
+  
+  xor g1 (w1,A,B);
+  xor g2 (sum,w1,cIn);
+  
+  and g3 (w2,w1,cIn);
+  and g4 (w3,A,B);
+  
+  or  g5 (cOut,w2,w3);
+  
+endmodule
